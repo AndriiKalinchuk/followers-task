@@ -1,6 +1,6 @@
 import { Fab } from '@mui/material';
 import UpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { fabStyle } from './toTopButtonStyles';
+import { fabStyle } from './ToTopButton.styled';
 
 export const ToTopButton = () => {
   const onTopScroll = () => {

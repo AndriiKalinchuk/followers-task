@@ -9,7 +9,7 @@ import {
   avatarBoxStyle,
   contentBoxStyle,
   buttonActiveStyles,
-} from './tweetsItemStyles';
+} from './TweetsItem.styled';
 import ImageBg from 'img/img-1.webp';
 import Logo from 'img/logo.svg';
 

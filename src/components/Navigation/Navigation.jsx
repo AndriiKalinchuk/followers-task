@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { Box, List, ListItem, Button } from '@mui/material';
 import { routesList } from 'refs/constants';
-import { navListStyle, navItemStyle, buttonStyle } from './navigationStyles';
+import { navListStyle, navItemStyle, buttonStyle } from './Navigation.styled';
 
 export const Navigation = () => {
   return (

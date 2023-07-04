@@ -20,9 +20,9 @@ export const Home = () => {
           flexWrap: 'wrap',
         }}
       >
-        <img src={Icon} alt="" width={90} height={90} />
+        <img src={Icon} alt="" width={160} height={90} />
         <Typography component="h1" sx={titleStyle}>
-          Some followers
+          UP!
         </Typography>
       </Box>
 
