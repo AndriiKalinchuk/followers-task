@@ -8,7 +8,7 @@ export const textStyle = {
 };
 
 export const iconFilterStyle = {
-  fontSize: '32px',
+  fontSize: '24px',
   color: 'primary.accent',
 };
 

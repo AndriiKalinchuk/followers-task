@@ -1,7 +1,7 @@
 import { useLocation, Link } from 'react-router-dom';
 import { Button, Tooltip } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import { buttonStyle, iconStyle } from './GoBackButton.styled';
+import { buttonStyle, iconStyle } from './goBackButtonStyles';
 
 export const GoBackButton = () => {
   const location = useLocation();

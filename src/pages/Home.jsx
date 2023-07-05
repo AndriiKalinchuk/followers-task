@@ -28,8 +28,8 @@ export const Home = () => {
 
       <Box sx={wrapperStyle}>
         <Typography sx={{ ...typographyStyle, fontSize: '20px', mb: '28px' }}>
-          User-friendly application, featuring a sleek design and the ability to filter tweets based
-          on follow status.
+          User-friendly application, featuring a sleek design and the ability to filter by follower
+          status.
         </Typography>
 
         <Typography fontSize={14}>

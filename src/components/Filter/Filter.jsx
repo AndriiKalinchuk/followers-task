@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button, Menu, MenuItem, Tooltip, Typography, Fade } from '@mui/material';
 import { FilterAlt } from '@mui/icons-material/';
 import { statusFilters } from 'refs/constants';
-import { buttonFilterStyle, textStyle, iconFilterStyle, menuItemsStyle } from './Filter.styled';
+import { buttonFilterStyle, textStyle, iconFilterStyle, menuItemsStyle } from './filterStyles';
 
 export const Filter = ({ value = 'Show all', onChange }) => {
   const [anchorEl, setAnchorEl] = useState('');

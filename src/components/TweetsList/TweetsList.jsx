@@ -1,6 +1,6 @@
 import { List } from '@mui/material';
 import { TweetsItem } from 'components/TweetsItem/TweetsItem';
-import { listStyle } from './TweetsList.styled';
+import { listStyle } from './tweetsListStyles';
 
 export const TweetsList = ({ users, onClick }) => {
   return (
