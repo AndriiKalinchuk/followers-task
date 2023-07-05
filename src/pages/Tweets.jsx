@@ -118,9 +118,15 @@ export const Tweets = () => {
         <Filter value={filter} onChange={handleFilter} resetPage={setPage} />
       </ToolsBar>
 
-      {users && <TweetsList users={filtredUsers} onClick={handleFollow} />}
+      {filtredUsers.length > 0 ? (
+        <TweetsList users={filtredUsers} onClick={handleFollow} />
+      ) : (
+        <p>Unfortunately there are no users matching the filter parameters</p>
+      )}
 
-      {totalHits > limit && <LoadMoreButton loading={isLoading} onClick={handleChangePage} />}
+      {filtredUsers.length > 0 && totalHits > limit && (
+        <LoadMoreButton loading={isLoading} onClick={handleChangePage} />
+      )}
 
       {isOffsetPage && <ToTopButton />}
     </Box>
