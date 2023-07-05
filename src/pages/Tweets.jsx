@@ -11,6 +11,7 @@ import { GoBackButton } from 'components/GoBackButton/GoBackButton';
 import { LoadMoreButton } from 'components/LoadMoreButton/LoadMoreButton';
 import { ToTopButton } from 'components/ToTopButton/ToTopButton';
 import { centredItemsStyles } from 'shared/basicStyles';
+import image from '../img/pulp-fiction-john-travolta.gif';
 
 export const Tweets = () => {
   const [users, setUsers] = useLocalStorage(lsKeys.users, []);
@@ -121,7 +122,11 @@ export const Tweets = () => {
       {filtredUsers.length > 0 ? (
         <TweetsList users={filtredUsers} onClick={handleFollow} />
       ) : (
-        <p>Unfortunately there are no users matching the filter parameters</p>
+        <>
+          {' '}
+          <img src={image} alt="not found" style={{ width: 300 }} />
+          <p>Unfortunately there are no users matching the filter parameters</p>
+        </>
       )}
 
       {filtredUsers.length > 0 && totalHits > limit && (
